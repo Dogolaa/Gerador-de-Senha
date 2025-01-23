@@ -17,10 +17,10 @@ export default () => {
 function gera() {
   const senha = geraSenha(
     qtdCaracteres.value,
-    chkMaiusculas,
-    chkMinusculas,
-    chkNumeros,
-    chkSimbolos
+    chkMaiusculas.checked,
+    chkMinusculas.checked,
+    chkNumeros.checked,
+    chkSimbolos.checked
   );
   return senha || 'Nada selecionado';
 }
